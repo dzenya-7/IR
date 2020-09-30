@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.ConsumerIrManager;
 import android.os.Build;
@@ -68,12 +69,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void toAddActivity(View view){
+        Intent intent= new Intent(this,AddRemote.class);
+        startActivity(intent);
+    }
+
     public void click(View view) {
-        ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
-        int frequency = 0;
-        int[] pattern = new int[]{ 1, 105, 5, 1, 75, 1095, 20, 60, 20, 140, 15, 2500, 80, 1 };
         try {
-            consumerIrManager.transmit(frequency, pattern);
+            TransmitFacade.transmit(this,10,new int[]{ 1, 105, 5, 1, 75, 1095, 20, 60, 20, 140, 15, 2500, 80, 1 });
             makeText(this, "Transmit information", Toast.LENGTH_SHORT).show();
         }
         catch (Exception e){

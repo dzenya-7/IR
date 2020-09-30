@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">IR</string>
+    <string name="frequency">Frequency</string>
+    <string name="bottom_button_code">Bottom button code</string>
+    <string name="left_button_code">Left button code</string>
+    <string name="right_button_code">Right button code</string>
+    <string name="power_button_code">Power button code</string>
+    <string name="ok_button_code">Ok button code</string>
+    <string name="plus_button_code">Plus button code</string>
+    <string name="minus_button_code">Minus button code</string>
+    <string name="top_button_code">Top button code</string>
+    <string name="device_name">Device name</string>
+    <string name="add_remote">Добавить</string>
 </resources>
