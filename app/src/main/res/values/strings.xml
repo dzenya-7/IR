@@ -11,4 +11,6 @@
     <string name="top_button_code">Top button code</string>
     <string name="device_name">Device name</string>
     <string name="add_remote">Добавить</string>
+    <string name="text">Text</string>
+    <string name="button">Button</string>
 </resources>

@@ -7,6 +7,31 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:onClick="toTransmitActivity"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:layout_marginStart="350dp"/>
+
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text2"
+        android:id="@+id/controller_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginBottom="10dp">
+
+    </ListView>
+    <Button
         android:text="@string/app_name"
         android:id="@+id/transmit"
         android:layout_height="wrap_content"
